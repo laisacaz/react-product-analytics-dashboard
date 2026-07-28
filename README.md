@@ -1,4 +1,4 @@
-# Product Margin Dashboard
+# Product Analytics Dashboard
 
 An interactive dashboard built with Next.js, React, TypeScript, and Tailwind CSS to analyze product profitability through KPIs, charts, and data visualization.
 
