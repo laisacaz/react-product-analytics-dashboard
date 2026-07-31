@@ -1,5 +1,6 @@
 "use client";
 
+import { GoogleLoginButton } from "@/components/auth/GoogleLoginButton";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
 
@@ -14,6 +15,11 @@ export function LoginPage() {
 
         // Aqui você chamará sua API
     }
+
+    async function handleGoogleLogin() {
+
+    }
+
     return (
         <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
             <main className="flex min-h-screen flex-col p-6">
@@ -36,6 +42,8 @@ export function LoginPage() {
                     ></input>
                     <Button
                         type="submit" variant="primary">Sign in</Button>
+                    <GoogleLoginButton
+                        onClick={handleGoogleLogin} />
                     <Button
                         variant="secondary">Create account</Button>
                 </form>
